@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="blog"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Ternary funding and joint tokens</title>
+
+
+<style>
+@import url(./theme/style.v5.css);
+</style>
+
+<link rel="stylesheet" href="./theme/tomorrow.css">
+<script src="./theme/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+</head><body><header>
+  <aside>September 25, 2021</aside>
+  <a href="/" rel="author">Ajesiroo</a>
+</header>
+
+<br>
+<h1>Ternary funding and joint tokens: <br> in simple terms</h1>
+<br>
+<p></p>
+
+
+<p>At the most fundamental level, ternary funding is a mechanism for locking funds until a public good is delivered, and then allowing a set of validators to vote on its release. A joint token is a novel type of NFT that replaces these funds, but is nevertheless locked in the same way.</p>
+
+<p>It was first proposed on May 6, and <a href="https://ajesiroo.github.io/ternary-funding.pdf">detailed in a paper</a> on July 14. In some ways, it’s the predecessor to Vitalik Buterin’s <a href="https://medium.com/ethereum-optimism/retroactive-public-goods-funding-33c9b7d00f0c">retroactive public goods funding</a>, that was proposed just a week later.</p>
+
+<h2>Why are the funds locked? And doesn’t the party developing the public good need funds upfront?</h2>
+
+<p>Validators need to attest that a specific set of predefined criteria have been met. The criteria are specified by the funding originator at the beginning of the round. This to ensure that the work was actually delivered.</p>
+
+<p>Of course, many entities need funding upfront. In this respect, it can be described as a secondary funding source to provide further incentive to undertake the work in the first place.</p>
+
+
+<h2>What are joint tokens?</h2>
+
+<p>Here’s where things get more interesting.  Validators can simultaneously be used for another purpose — when their transaction is submitted to the staking contract, their address can be mapped to a randomly selected colour, and collectively this mapping can be used to create an NFT that represents all validators. The colours are chosen at random so it can’t be gamed to look a certain way.</p>
+
+<p>The below is a primitive example just to illustrate the concept.</p>
+
+<p><img src="grid4.png"></p>
+
+<p>It’s art with another layer — the token contains a data structure of every address and colour pair. Indeed, this data structure needs to be parsed off-chain to create a visual representation. This way everything can be stored on-chain.
+
+<p>There’s an inherent elegance to this. The same validators that were securing the funding round have also collectively formed a token in the same transaction. It not only eliminates the need for a separate donation pool, but provides a further incentive to become a validator in the first place — having your contribution displayed visually.</p>
+
+<p>Anybody can then build any kind of front end to parse this data structure off-chain. With a couple of extra lines of javascript, the NFT becomes interactive. Hover over an individual entry on the grid and the validator address or ENS name is displayed.</p>
+
+<p>Much more complex mappings beyond colours can also be used, so long as everything is stored on-chain and gas fees are taken into account.</p>
+
+
+<h2>Why would this token have any value? How does it help the party developing the public good?</h2>
+
+<p>Validators can come from a diverse range of backgrounds. Everyone from those with an interest in the public good, to those that want to contribute to a specific cause, to more prominent figures in the community.</p>
+
+<p>Each validator can then publicly post the transaction hash that links them to the token, if they choose to do so. When a threshold of validators is reached, and the minting contract can be called, the end result is not only something that’s probably nice to look at, but something that represents a set of people that made expenditures to generate it in the first place.</p>
+
+<p>The token is locked until attestation by a random subset of validators. If consensus is reached to release the token to the party that developed the public good, it now represents:</p>
+
+
+<li>Confirmation that the public good was delivered</li>
+<li>All validators that made expenditures, including the risk of slashing, to mint the token</li>
+<li>The specific subset of validators that took the time to attest</li>
+
+
+<p>This thing probably has a bit of value. Even more so if a better known validator happened to join the pool.</p>
+
+<p>As it’s ultimately an ERC-721 token, the party that developed the public good can either choose to hold on to it or trade it in any NFT marketplace.</p>
+
+<br>
+<p><i>The paper can be found <a href="https://ajesiroo.github.io/ternary-funding.pdf">here</a>.</i></p>
+
+
+<footer>
+  <aside>September 25, 2021</aside>
+<a href="/" rel="author">Ajesiroo</a>
+</footer>
+
+
+
+</body></html>
