@@ -1,0 +1,335 @@
+@import url(//fonts.googleapis.com/css?family=PT+Serif|PT+Serif:b|PT+Serif:i|PT+Sans|PT+Sans:b);
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro);
+
+.blog body {
+  background: #000;
+  color: #dadada;
+  font-family: "PT Serif", serif;
+  margin: 1em auto 4em auto;
+  max-width: 720px;
+  padding: 0 18px;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.blog header,
+.blog footer,
+.blog h1,
+.blog h2,
+.blog h3,
+.blog h4 {
+  font-family: "PT Sans", sans-serif;
+}
+
+.blog h1,
+.blog h2,
+.blog h3,
+.blog h4 {
+  color: #dadada;
+}
+
+.blog header,
+.blog footer {
+  color: #a9a9a9;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  line-height: 1em;
+  margin: .5em 0;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h1,
+h2 {
+  text-rendering: optimizeLegibility;
+}
+
+h2 a[name],
+h2 a[id] {
+  color: #999;
+  right: 100%;
+  margin-right: -8px;
+  position: absolute;
+}
+
+header,
+footer {
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 8em;
+}
+
+.attribution {
+  font-size: small;
+  margin-bottom: 2em;
+}
+
+body > p,
+body > aside,
+body > blockquote,
+li > p {
+  line-height: 1.5em;
+    font-size: 18px;
+}
+
+body > p,
+body > ul,
+body > aside,
+body > blockquote {
+  max-width: 720px;
+}
+
+body > p.figure {
+  max-width: 1000px;
+}
+
+body > aside > p:last-child {
+  margin-bottom: 0;
+}
+
+body > blockquote {
+  /* margin: 18px 0; */
+}
+
+blockquote q {
+  font-style: oblique;
+}
+
+ul {
+}
+
+li {
+  margin-left: 0;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #4fbcff;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+pre,
+code,
+textarea {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  line-height: 1.5em;
+  font-size: 18px;
+  white-space: pre-wrap;
+}
+
+mono {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code {
+
+}
+
+textarea {
+  font-size: 100%;
+}
+
+
+.html .value,
+.javascript .string,
+.javascript .regexp {
+  color: #756bb1;
+}
+
+.html .tag,
+.css .tag,
+.javascript .keyword {
+  color: #3182bd;
+}
+
+.comment {
+  color: #636363;
+}
+
+.html .doctype,
+.javascript .number {
+  color: #31a354;
+}
+
+.html .attribute,
+.css .attribute,
+.javascript .class,
+.javascript .special {
+  color: #e6550d;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+#svg4211 {
+  height: 295px !important;
+}
+
+mark {
+  background-color: #dadada;
+  color: #000;
+}
+
+.tippy-box[data-theme~='gradient']{
+  background:linear-gradient(130deg,#507bf4,#ff8bcb);
+  font-weight:bold;
+  font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+sup, sub {
+  line-height: 0;
+}
+
+q:before {
+  content: "â€œ";
+}
+
+q:after {
+  content: "â€";
+}
+
+blockquote q {
+  line-height: 1.5em;
+  display: inline;
+}
+
+blockquote q:before,
+blockquote q:after {
+  content: "";
+}
+
+.note {
+  box-shadow: 0 8px 16px rgba(204,204,119,0.4);
+  background: #ffa;
+  border-bottom: solid 1px rgba(204,204,119,0.6);
+  padding: 18px;
+  margin: 2em -18px 0 -18px;
+}
+
+@media (min-width: 761px) {
+  h2 a[name],
+  h2 a[id] {
+    color: #ccc;
+  }
+
+  body > pre {
+  }
+}
+
+@media (max-width: 999px) {
+  body > aside {
+    margin-top: auto !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .blog aside,
+  .inset {
+    font-size: 14px;
+    font-family: "PT Sans", sans-serif;
+    line-height: inherit;
+  }
+
+  .blog body {
+    max-width: 720px;
+  }
+
+  .blog header aside,
+  .blog footer aside {
+    float: left;
+    margin-right: .5em;
+  }
+
+  .blog header aside:after,
+  .blog footer aside:after {
+    padding-left: .5em;
+    content: "|";
+  }
+
+  h1 ~ aside {
+    font-size: small;
+    right: 0;
+    position: absolute;
+    width: 180px;
+  }
+
+  .inset {
+    float: right;
+    margin: 0 0 0 2em;
+  }
+}
+
+#wrapper {
+  margin-left: 62px;
+}
+#bio {
+  float: right;
+  width: 100%;
+  background-color: #fff;
+}
+#sidebar {
+  float: left;
+  width: 62px;
+  margin-left: -62px;
+  background-color: #fff;
+}
+#cleared {
+  clear: both;
+}
+
+p > code {
+    font-size: 14px;
+    background: #f5f5f5;
+    color: #5C5C5C;
+    padding: 1px 5px;
+}
+
+.date {
+  color: #a9a9a9;
+  font-family: "PT Sans", sans-serif;
+  font-size: smaller;
+  text-align: left;
+  width: 240px;
+}
+
+
+/* This creates the counter  */
+body {
+  counter-reset: cb_counter_var;
+}
+
+/* This increments the counter value and defines
+the displayed content  */
+
+sup::before {
+  counter-increment: cb_counter_var;
+  content: "[" counter(cb_counter_var) "]";
+}
+
+:target {
+	background: #282828;
+}
