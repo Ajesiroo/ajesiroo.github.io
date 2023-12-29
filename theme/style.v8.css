@@ -165,14 +165,14 @@ a:not(:hover) {
 pre,
 code,
 textarea {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Menlo, monospace;
   line-height: 1.5em;
   font-size: 18px;
   white-space: pre-wrap;
 }
 
 mono {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: Menlo, monospace;
 }
 
 code {
