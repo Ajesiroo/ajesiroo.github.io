@@ -31,6 +31,14 @@
   font-weight: 400;
   src: url('../fonts/pt-sans-v17-latin-italic.woff2') format('woff2');
 }
+/* pt-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pt-sans-v17-latin-700.woff2') format('woff2');
+}
 
 .blog body {
   background: #000;
