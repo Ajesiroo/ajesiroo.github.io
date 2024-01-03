@@ -42,7 +42,7 @@
 .blog body {
   background: #000;
   color: #dadada;
-  font-family: "PT Serif", serif;
+  font-family: "PT Serif", Georgia, serif;
   margin: 1em auto 4em auto;
   max-width: 720px;
   padding: 0 18px;
