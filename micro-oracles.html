@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="blog"><head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CB96HQ7BWS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CB96HQ7BWS');
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>Micro oracles</title>
+
+
+<style>
+@import url(./theme/style.v8.css);
+</style>
+
+<link rel="stylesheet" href="./theme/tomorrow.css">
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css">
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light-border.css">
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/material.css">
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/translucent.css">
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@3.4.0/dist/themes/google.css">
+
+<script src="./theme/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+
+</head><body><header>
+  <aside>January 12, 2024</aside>
+  <a href="/" rel="author">Ajesiroo</a>
+</header>
+
+<br>
+<h1>Micro oracles: a simple commitment-augmented funding mechanism</h1>
+<br>
+<p></p>
+
+<mono><a href="https://ajesiroo.github.io/micro-oracles.pdf">https://ajesiroo.github.io/micro-oracles.pdf</a></mono>
+
+<p><i>Abstract:</i></p>
+
+<p><i>Standard on-chain funding mechanisms are often prone to misaligned incentives, both in the form of grants, where mismanaging of resources is common, and in the form of post factum rewards, where backers occasionally renege on prior assurances. Multi-node oracles are sometimes used to mitigate these drawbacks by requiring confirmation of an off-chain event prior to disbursement, but they are typically difficult to implement as they require significant considerations around economic viability and security. We propose a simple oracle system that can be reduced to two parties. A contribution is held in a smart contract and a portion of the amount is reserved, representing a minimum commitment level. Upon the actualisation of an off-chain event, the backer can either transfer the full contribution to the recipient or revert the majority of the contribution and burn the reserved portion in the process. The minimum commitment level not only serves as a signalling device for the recipient, but disincentivises the backer from making allocations arbitrarily.</i></p>
+
+<footer>
+  <aside>January 12, 2024</aside>
+<a href="/" rel="author">Ajesiroo</a>
+</footer>
+
+</body></html>         
+                      
